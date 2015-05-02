@@ -6,6 +6,9 @@
 *.user
 *.userosscache
 *.sln.docstates
+*.sln
+*.vcxproj
+*.vcxproj.filters
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
@@ -62,6 +65,11 @@ dlldata.c
 *.pidb
 *.svclog
 *.scc
+*.csproj
+*.config
+*.packages.config
+*.asax
+
 
 # Chutzpah Test files
 _Chutzpah*
@@ -194,3 +202,11 @@ FakesAssemblies/
 
 # Visual Studio 6 workspace options file
 *.opt
+
+# testing 
+socking.Tests/*
+
+# Publishing
+PublishScripts/*
+
+Properties/*
