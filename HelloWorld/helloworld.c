@@ -1,18 +1,20 @@
-// helloworld.c
-// boolean  true = 1 /false = 0
+// storage class
 #include <stdio.h>
 
-int count = 5; 
+extern void func(); // in a differnet source file
+extern int var;
 
 // separation of concerns(SoC)
-int main(int argc, char ** argv) {	
+int main(int argc, char ** argv) {
+	func();
+	printf("The extern var is %d\n", var);
+	int count = 7; // auto storage inside block 
 	for (int i = 0; i < count; i++)
 	{
-		printf("i is %d\n", i);
-		int x = printf(s) * 5; // expressions in a statement
-		printf("printf s string returned %d chars\n", x); // printf value returns 70 statement
+		static int number = 4; // permanent storage stays there	& can be reused
+		int y = printf("The number is %d\n", number++);
 	} // end for loop
+	int x = printf("The count is %d\n", count);
 	return 0;
 } // end main
 
-char * s = "Hello, World!\n"; // outside not visible to function
